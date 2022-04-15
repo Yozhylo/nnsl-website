@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'Guru';
+	src: url('/styles/fonts/Guru.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Cronos Pro Display';
+	src: url('/styles/fonts/Cronos-Pro-Display.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Adamina Regular';
+	src: url('/styles/fonts/Adamina-Regular.woff') format('woff');
+		font-weight: normal;
+		font-styles: normal;
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 100;}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Adamina Regular';
+  margin: 0px;
+	color: blanchedalmond;
+	background-color: black;
+}
+nav {
+	margin: 2px 10px;
+}
+main {
+	margin: 10px;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.small-text {
+	font-size: small;
+	font-family: 'Cronos Pro Display';
+}
+.huge-text {
+	font-size: xx-large;
+	font-family: Guru;
+}
+.header-animated {
+	animation: fadeIn 3s;
+}
+.small-icon {
+	height: 32px;
+	width: auto;
+}
+
+#header-logo {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: flex-start;
+	align-items: center;
+	flex-direction: column-reverse;
+	width: 100%;
+
+	text-align: center;
+
+	background-image: url(/img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#bottom-panel {
+	display: flex;
+	float: right;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-items: baseline;	
+}
